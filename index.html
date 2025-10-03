@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Travel Itinerary Planner </title>
+</head>
+<body>
+  <div class="container">
+    <h1>Travel Itinerary Planner</h1>
+
+    <form id="tripForm">
+      <input type="text" id="destination" placeholder="Destination" required>
+      <input type="number" id="duration" placeholder="Duration (days)" required>
+      <input type="number" id="cost" placeholder="Cost (₱)" required>
+      <select id="type" required>
+        <option value="adventure">Adventure</option>
+        <option value="leisure">Leisure</option>
+        <option value="cultural">Cultural</option>
+      </select>
+      <button type="submit">Add Trip</button>
+    </form>
+
+    <div class="buttons">
+      <button onclick="calculateTotalCost()">Total Cost</button>
+      <button onclick="filterByType('adventure')">Adventure</button>
+      <button onclick="filterByType('leisure')">Leisure</button>
+      <button onclick="filterByType('cultural')">Cultural</button>
+      <button onclick="findLongestTrip()">Longest Trip</button>
+      <button onclick="groupByCost()">Group by Cost</button>
+      <button onclick="fetchSuggestedTrips()">Fetch Suggested Trips</button>
+    </div>
+
+    <h4>Planned Trips</h4>
+    <ul id="tripList"></ul>
+
+    <h4>Results</h4>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List (Fetch API + DOM)</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h2>Todo List (Fetch API + DOM)</h2>
+
+    <div class="user-section">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username" />
+        <button id="loadTodos">Load Todos</button>
+    </div>
+
+    <div class="form-section">
+        <input type="text" id="description" placeholder="Description" />
+        <input type="date" id="dueDate" />
+        <label><input type="checkbox" id="done" /> Done</label>
+        <button id="addTodo">Add</button>
+    </div>
+
+    <ul id="todoList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

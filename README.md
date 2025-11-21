@@ -1,2 +1,2 @@
-# WS101_Lab-4
+# WS101_Laboratories
 Problem 5: Travel Itinerary Planner
